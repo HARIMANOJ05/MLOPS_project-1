@@ -18,4 +18,3 @@ logging.basicConfig(
 
 )
 
-logging.info("test run 3")

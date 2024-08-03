@@ -12,21 +12,43 @@ from pathlib import Path
 
 @dataclass
 class DataIngestionConfig:
-    pass
+    raw_data_path:str=os.path.join("artifacts","raw.csv")
+    train_data_path:str=os.path.join("artifacts","train.csv")
+    test_data_path:str=os.path.join("artifacts","test.csv")
 
-
-   
 
 class DataIngestion:
-     
     def __init__(self):
-        pass
+        self.ingestion_config = DataIngestionConfig()
 
-    def initiate_data_ingestion():
+    def initiate_data_ingestion(self):
+        logging.info("Initializing data ingestion")
+
         try:
-            pass
-        except Exception as e:
-            raise customexception(e,sys)
-        
+            data = pd.read_csv("C:\\Users\\Hari Manoj\\OneDrive\\Desktop\\datasets\\gemstone.csv")
+            logging.info("Reading data file")
 
-    
+            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
+            data.to_csv(self.ingestion_config.raw_data_path, index=False)
+            logging.info("Raw data obtained")
+
+            train_data, test_data = train_test_split(data, test_size=0.25)
+            logging.info("Train-test split performed")
+
+            train_data.to_csv(self.ingestion_config.train_data_path, index=False)
+            test_data.to_csv(self.ingestion_config.test_data_path, index=False)
+            logging.info("Data ingestion completed")
+
+            return (
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path
+            )
+
+        except Exception as e:
+            logging.error(f"Error in data ingestion: {e}")
+            raise customexception(e, sys)
+        
+if __name__=='__main__':
+    obj=DataIngestion()
+
+    obj.initiate_data_ingestion()
