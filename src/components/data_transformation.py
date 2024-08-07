@@ -93,7 +93,7 @@ class DataTransformation:
             logging.info(f'Test Dataframe Head : \n{test_df.head().to_string()}')
 
 
-            preprocessor_obj = self.get_data_transforamtion()
+            preprocessor_obj = self.get_data_transforamtion(self)
 
 
             target_column='price'
