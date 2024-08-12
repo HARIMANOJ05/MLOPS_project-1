@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hari%20Manoj/OneDrive/Documents/GitHub/MLOPS_project-1/mlruns/0/01824d2d9be04b92b454fd1638c4f85d/artifacts
+end_time: 1723481840649
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 01824d2d9be04b92b454fd1638c4f85d
+run_name: likeable-conch-139
+run_uuid: 01824d2d9be04b92b454fd1638c4f85d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723481839685
+status: 4
+tags: []
+user_id: Hari Manoj

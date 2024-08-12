@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hari%20Manoj/OneDrive/Documents/GitHub/MLOPS_project-1/mlruns/0/23cf15f73127431cb066b5aa8a658372/artifacts
+end_time: 1723482694575
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 23cf15f73127431cb066b5aa8a658372
+run_name: unique-pig-311
+run_uuid: 23cf15f73127431cb066b5aa8a658372
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723482694373
+status: 4
+tags: []
+user_id: Hari Manoj

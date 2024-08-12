@@ -6,6 +6,7 @@ matplotlib
 dvc
 mlflow==2.2.2
 xgboost
+flask
 
 
 

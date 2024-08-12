@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hari%20Manoj/OneDrive/Documents/GitHub/MLOPS_project-1/mlruns/0/a9d03d77cc5f41fbaa2a5e9698881db4/artifacts
+end_time: 1723482775917
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a9d03d77cc5f41fbaa2a5e9698881db4
+run_name: nosy-stoat-75
+run_uuid: a9d03d77cc5f41fbaa2a5e9698881db4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723482763500
+status: 3
+tags: []
+user_id: Hari Manoj

@@ -12,7 +12,7 @@ from sklearn.linear_model import Lasso,LinearRegression,Ridge
 from sklearn.metrics import r2_score,mean_absolute_error,mean_squared_error
 from xgboost import XGBRFRegressor
 from sklearn.ensemble import RandomForestRegressor
-from src.components.data_transformation import DataTransformationConfig
+from src.components.data_transformation import DataTransformation
 
 
 @dataclass
@@ -45,8 +45,9 @@ class Modeltrainer :
             "lasso":Lasso(),
             "Ridge":Ridge(),
             "linear_regression":LinearRegression(),
-            "xgboost":XGBRFRegressor(),
-            "randomforest": RandomForestRegressor()
+            "xgbregressor":XGBRFRegressor(),
+            
+            
          }
             
             model_report:dict=evaluate_model( X_train,y_train,X_test,y_test,models)
@@ -56,12 +57,14 @@ class Modeltrainer :
 
             best_model_score=max(sorted(model_report.values()))
             
-            best_model=list(model_report.keys())[
+            best_model_name=list(model_report.keys())[
                 list(model_report.values()).index(best_model_score)
             ]
             
-            print(f'high performing model is {best_model}, with r2 score of {best_model_score}')
-            logging.info(f'Best Model Found , Model Name : {best_model} , R2 Score : {best_model_score}')
+            best_model = models[best_model_name]
+
+            print(f'high performing model is {best_model_name}, with r2 score of {best_model_score}')
+            logging.info(f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
 
 
 
