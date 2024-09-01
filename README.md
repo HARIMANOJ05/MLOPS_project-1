@@ -70,7 +70,7 @@ You can access the Gemstone Price Prediction web application at the following UR
 
 ## updations
 
-updations are done continuosly to update the application to increase the performance
+updations are done continuosly to the application to increase the performance 
 
 ---
 Any contributions for frontend application development are accepted, Please submit issues or pull requests for improvements.
