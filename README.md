@@ -61,3 +61,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 For detailed setup instructions and additional configuration, refer to the project's documentation and configuration files.
+
+## Access the Application
+
+You can access the Gemstone Price Prediction web application at the following URL:
+
+[Gemstone Price Prediction](https://gemstoneprice-e6bra6dkdjcfawh6.southindia-01.azurewebsites.net)
+
