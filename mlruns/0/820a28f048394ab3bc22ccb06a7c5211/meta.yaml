@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hari%20Manoj/OneDrive/Documents/GitHub/MLOPS_project-1/mlruns/0/820a28f048394ab3bc22ccb06a7c5211/artifacts
+end_time: 1723887593422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 820a28f048394ab3bc22ccb06a7c5211
+run_name: casual-sow-932
+run_uuid: 820a28f048394ab3bc22ccb06a7c5211
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723887577220
+status: 3
+tags: []
+user_id: Hari Manoj

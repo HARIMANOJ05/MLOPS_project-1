@@ -25,7 +25,7 @@ class DataIngestion:
         logging.info("Initializing data ingestion")
 
         try:
-            data = pd.read_csv("C:\\Users\\Hari Manoj\\OneDrive\\Desktop\\datasets\\gemstone.csv")
+            data = pd.read_csv("/datasets/gemstone.csv")
             logging.info("Reading data file")
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
@@ -48,7 +48,3 @@ class DataIngestion:
             logging.error(f"Error in data ingestion: {e}")
             raise customexception(e, sys)
         
-if __name__=='__main__':
-    obj=DataIngestion()
-
-    obj.initiate_data_ingestion()

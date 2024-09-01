@@ -1,0 +1,26 @@
+version: "3"
+services:
+  airflow:
+    build:
+      context: ./
+      dockerfile: Dockerfile.airflow
+
+    image: airflow_image
+    container_name: diamondprice-prediction-airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - C:\\Users\\Hari Manoj\\OneDrive\\Desktop\\datasets\\gemstone.csv:/datasets/gemstone.csv
+
+  flaskapp:
+    build: 
+      context: ./
+      dockerfile: Dockerfile.flask
+    image: flask_image
+    container_name: diamondprice-prediction-flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development

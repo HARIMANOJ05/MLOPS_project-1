@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hari%20Manoj/OneDrive/Documents/GitHub/MLOPS_project-1/mlruns/0/2cced3020c624081b14c964268b70f78/artifacts
+end_time: 1723481362798
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2cced3020c624081b14c964268b70f78
+run_name: grandiose-bug-872
+run_uuid: 2cced3020c624081b14c964268b70f78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723481362519
+status: 4
+tags: []
+user_id: Hari Manoj
