@@ -1,3 +1,58 @@
-<h1>
-    the predicted diamond price is{{final_result}}
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction Result</title>
+  <style>
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fa;
+      text-align: center;
+    }
+
+    .result-container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #243a49;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      color: #fff;
+      background-color: #243a49;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #1d3241;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="result-container">
+    <h1>The Predicted Diamond Price is INR {{ final_result }}</h1>
+    </h1>
+    <a href="/" class="button">Back to Home</a>
+  </div>
+</body>
+</html>

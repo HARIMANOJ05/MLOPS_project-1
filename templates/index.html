@@ -1,5 +1,152 @@
-<h1>DIAMOND PRICE PREDICTION</h1>
-<H3>
-    HERE you can check your diamond value
-    
-</H3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Price Prediction</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fa;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #e0eefa, #f2f7fc);
+      color: #333;
+      padding: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3.5em;
+      color: #243a49;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+      margin: 10px 0;
+      font-size: 1.8em;
+      color: #66757d;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .description {
+      margin: 20px 0;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #66757d;
+    }
+
+    /* Button */
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      color: #fff;
+      background-color: #243a49;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      background-color: #1d3241;
+      transform: scale(1.05);
+    }
+
+    /* Diamond Stamps */
+    .diamond-stamp {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 4px solid #e0eefa;
+      border-radius: 0;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      background: rgba(255, 255, 255, 0.1);
+      transform: translate(-50%, -50%);
+      opacity: 0.7;
+      top: 50%;
+      left: 50%;
+    }
+
+    .rotating-diamond {
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+      width: 100px;
+      height: 100px;
+      border: 4px solid #e0eefa;
+      border-radius: 0;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      background: rgba(255, 255, 255, 0.2);
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.8em;
+      }
+
+      h3 {
+        font-size: 1.6em;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+
+      .button {
+        padding: 12px 24px;
+      }
+
+      .diamond-stamp,
+      .rotating-diamond {
+        width: 150px;
+        height: 150px;
+      }
+
+      .rotating-diamond {
+        bottom: 5%;
+        right: 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Diamond Price Prediction</h1>
+    <h3>Discover Your Diamond's Value</h3>
+    <div class="diamond-stamp"></div>
+    <div class="rotating-diamond"></div>
+  </header>
+  <div class="container">
+    <p class="description">
+      Leverage our advanced machine learning model to estimate the value of your diamond with high precision. Simply enter your diamond's characteristics to receive an accurate price prediction.
+    </p>
+    <a href="/predict" class="button">Get Started</a>
+  </div>
+</body>
+</html>
