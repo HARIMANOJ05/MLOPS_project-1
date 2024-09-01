@@ -68,3 +68,9 @@ You can access the Gemstone Price Prediction web application at the following UR
 
 [Gemstone Price Prediction](https://gemstoneprice-e6bra6dkdjcfawh6.southindia-01.azurewebsites.net)
 
+## updations
+
+updations are done continuosly to update the application to increase the performance
+
+---
+Any contributions for frontend application development are accepted, Please submit issues or pull requests for improvements.
