@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: gemstoneprices.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b01229ceb4894426bcf4a7e52dd601f1 }}/gemstone2:${{ github.sha }}
+        tags: gemstoneprices.azurecr.io/gemstoneprice/gemstone2:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
