@@ -48,4 +48,4 @@ jobs:
         app-name: 'Gemstoneprice'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_57c02b7d76f04c8ca07c73639ff5e135 }}
-        images: 'gemstoneprices.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b01229ceb4894426bcf4a7e52dd601f1 }}/gemstone2:${{ github.sha }}'
+        images: 'gemstoneprices.azurecr.io/gemstoneprice/gemstone2:${{ github.sha }}'
