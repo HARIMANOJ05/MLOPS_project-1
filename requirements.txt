@@ -12,7 +12,6 @@ pendulum
 apache-airflow
 apache-airflow-providers-amazon
 
-
 -e .
 
 
